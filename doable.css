@@ -211,23 +211,23 @@ background-color: #434b56;
      
 }
  }
- @media (max-width: 1099px) {
-   #logo {
+   @media (max-width: 1099px) {
+  /* #logo {
      text-align: center;
-     //font-size: 0.8em;
+     font-size: 0.8em;
      width: 100%;
-   }
+   } */
 
    #about > ul{
-     //float: left;
-     width: 100%;
+   //float: left;
+     //width: 100%;
+    // padding-right: 0px;
+     padding-left: 240px;
+     //text-align: center;
+     //justify-content: center;
      //padding-right: 0px;
-     //padding-left: 240px;
-     text-align: center;
-     justify-content: center;
-     padding-right: 0px;
 }
- }
+ }    
 
   #top{
   width: 100%;
@@ -237,10 +237,10 @@ background-color: #434b56;
   color: #fff;
   }
 
-  @media (min-width: 1001px) {
+  /*@media (min-width: 1001px) {
     #top {
-      font-size: 2em;
-    }
+     font-size: 2em;
+   }
   }
 
   @media (max-width: 1000px) and (min-width: 651px) {
@@ -253,7 +253,7 @@ background-color: #434b56;
           #top {
             font-size: 1em;
           }
-        }
+        }    */
 
   #top h1{
   }
