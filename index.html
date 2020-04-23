@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Fan public Anime</title>
+    <link rel="stylesheet" href="doable.css" type="text/css">
+<script src="https://kit.fontawesome.com/03c13364c9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+    <div id="logo" title="Возвращает на верх страници" onclick="slowScroll('#top')">
+        <span>AnimeTyt</span>
+    </div>
+
+
+    <div id="about">
+
+  <ul>
+<li class="search-box">
+         <input type="text" class="search-txt" placeholder="Поиск">
+         <a href="#" class="search-btn"><i class="fas fa-search"></i></a>
+</li>
+        <li><a href="#" title="Главная" onclick="slowScroll('#main')" >Главная</a></li>
+        <li><a href="#" title="Жанры" onclick="slowScroll('#main')" >Жанры</a>
+<ul>
+                    <li><a href="#">повсегдневность</a></li>
+                    <li><a href="#">приключения</a></li>
+                    <li><a href="#">романтика</a></li>
+                    <li><a href="#">фантастика</a></li>
+                    <li><a href="#">драма</a></li>
+                </ul>
+</li>
+        <li><a href="#" title="Топ-100" onclick="slowScroll('#main')" >Топ-100</a></li>
+        <li><a href="#" title="Онгоинги" onclick="slowScroll('#main')" >Онгоинги</a>
+<ul>
+                    <li><a href="#">Лето 2020</a></li>
+                    <li><a href="#">Осень 2020</a></li>
+                    <li><a href="#">Зима 2020</a></li>
+                    <li><a href="#">Весна 2020</a></li>
+                </ul>
+</li>
+        <li><a href="#" title="Новости" onclick="slowScroll('#main')" >Новости</a></li>
+  </ul>
+    </div>
+
+
+
+</header>
+<div id="top">
+
+<div class="all"> <!-- слайдер -->
+     <input checked type="radio" name="respond" id="desktop">
+     <article id="slider">
+         <input checked type="radio" name="slider" id="switch1">
+         <input  type="radio" name="slider" id="switch2">
+         <input  type="radio" name="slider" id="switch3">
+         <div id="slides">
+             <div id="overflow">
+                 <div class="image">
+                     <article><img src="naruto.jpg"></article>
+                     <article><img src="jojo.jpg"></article>
+                     <article><img src="sao.jpg"></article>
+                 </div>
+             </div>
+         </div>
+         <div id="controls">
+             <label for="switch1"></label>
+             <label for="switch2"></label>
+             <label for="switch3"></label>
+         </div>
+         <div id="active">
+             <label for="switch1"></label>
+             <label for="switch2"></label>
+             <label for="switch3"></label>
+         </div>
+     </article>
+        <h1> jgieglk gw je l</h1>
+        <h3>wpo 4tjw t wpotr3o 3qw p4ty49</h3>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    function slowScroll(id) {
+      $('html, body').animate({
+        scrollTop: $(id).offset().top
+      }, 500);
+    }
+  </script>
+
+ 
+
+</body>
