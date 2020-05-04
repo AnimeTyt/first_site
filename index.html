@@ -1,9 +1,11 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <html>
 <head>
     <meta charset="UTF-8">
     <title>Fan public Anime</title>
+    <script type="text/javascript" src="jquery-3.5.0.js"></script>
+    <script type="text/javascript" src="script.js"></script> 
     <link rel="stylesheet" href="doable.css" type="text/css">
 <script src="https://kit.fontawesome.com/03c13364c9.js" crossorigin="anonymous"></script>
 </head>
@@ -47,37 +49,41 @@
 
 
 </header>
-<div id="top">
 
-<div class="all"> <!-- слайдер -->
-     <input checked type="radio" name="respond" id="desktop">
-     <article id="slider">
-         <input checked type="radio" name="slider" id="switch1">
-         <input  type="radio" name="slider" id="switch2">
-         <input  type="radio" name="slider" id="switch3">
-         <div id="slides">
-             <div id="overflow">
-                 <div class="image">
-                     <article><img src="naruto.jpg"></article>
-                     <article><img src="jojo.jpg"></article>
-                     <article><img src="sao.jpg"></article>
-                 </div>
-             </div>
-         </div>
-         <div id="controls">
-             <label for="switch1"></label>
-             <label for="switch2"></label>
-             <label for="switch3"></label>
-         </div>
-         <div id="active">
-             <label for="switch1"></label>
-             <label for="switch2"></label>
-             <label for="switch3"></label>
-         </div>
-     </article>
-        <h1> jgieglk gw je l</h1>
-        <h3>wpo 4tjw t wpotr3o 3qw p4ty49</h3>
-    </div>
+<div class="wrapper">
+			<!-- Контент -->
+
+			<div class="slider">
+				<div class="slider__item">
+					<img src="01.jpg" alt="">
+				</div>
+				<div class="slider__item">
+					<img src="02.jpg" alt="">
+				</div>
+				<div class="slider__item">
+					<img src="03.jpg" alt="">
+				</div>
+				<div class="slider__item">
+					<img src="04.jpg" alt="">
+				</div>
+				<div class="slider__item">
+					<img src="05.jpg" alt="">
+				</div>
+				<div class="slider__item">
+					<img src="06.jpg" alt="">
+				</div>
+				<div class="slider__item">
+					<img src="07.jpg" alt="">
+				</div>
+				<div class="slider__item">
+					<img src="08.jpg" alt="">
+				</div>
+				<div class="slider__item">
+					<img src="09.jpg" alt="">
+				</div>
+			</div>
+			
+		
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -88,6 +94,8 @@
       }, 500);
     }
   </script>
+  <!-- Подключаем слайдер Slick -->
+			<script src="slick.min.js"></script>
 
  
 
