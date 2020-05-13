@@ -112,7 +112,7 @@ border-radius:0px 25px 25px 0px;
 #about li > ul li:first-child a{
 display: block;
 border-radius: 0px;
-background-color: #262c336e;
+background-color: #262c3485;
 width: 100%;
 }
  #about > ul li:first-child a:hover {
@@ -135,7 +135,7 @@ display: flex;
 text-transform: none;
 padding-top: 5px;
 font-size: 18px;
-background-color: #262c336e;
+background-color: #262c3485;
 padding-left: 5px;
 }
 
@@ -864,7 +864,7 @@ background-color: #999;
   display: flex;
   position: relative;
   padding-left: 10px;
-  top: -4px;
+  top: -3.5px;
   border-radius: 0 0 20px 20px;
   width: auto;
   background: #2f3640b5;
@@ -912,12 +912,17 @@ background-color: #999;
  header{
    height: 43px;
    margin-top: -5px;
-   padding-bottom: 5px;}
+   padding-bottom: 5px;
+   }
+ #about{top: 43px;}  
 
   h3{
   font-size:17.4px;
    //line-height: 21px;
   }
+  .slider {
+    margin-top: -10px;
+}
   h4{
   font-size:16.3px;
   }
@@ -928,14 +933,15 @@ background-color: #999;
    .pages-numbers{
    font-size:16px;
 padding: 0 20px;
+height: 100%;
  }
  
  .pages-numbers span{
  font-size:12px;
-padding: 5px 12px;
+padding: 9px 12px 7px 12px;
  }
  
 .pages-numbers a{
-padding: 3px 17px 2px 17px;
+padding: 7px 17px 6px 17px;
 }
 }
