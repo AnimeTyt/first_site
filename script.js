@@ -21,21 +21,24 @@ $(document).ready(function(){
 				}
 			},
 			{
-				breakpoint: 950,
+				breakpoint: 890,
 				settings: {
-					slidesToShow:3
+				slidesToShow:4,
+		   arrows:false
 				}
 			},
 			{
-				breakpoint: 800,
+				breakpoint: 769,
 				settings: {
-					slidesToShow:2
+					slidesToShow:3,
+		   arrows:false
 				}
 			},
 			{
-				breakpoint: 550,
+				breakpoint: 555,
 				settings: {
-					slidesToShow:1
+					slidesToShow:2,
+		   arrows:false
 				}
 			}
 		]
