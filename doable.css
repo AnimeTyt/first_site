@@ -16,6 +16,22 @@
 
   background-image: url("https://img0.liveinternet.ru/images/attach/c/5/86/655/86655110_84245305_Hokusai_Hram_Hongandzi_v_Asakusa.jpg");
  }
+ #night{
+   position: fixed;
+   display: block;
+   background: #1d232c;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   top: 0;
+   opacity: 0;
+   z-index: -1;
+   transition: all 0.5s ease;
+ }
+ #night.active{
+   opacity: 0.8;
+   z-index: 10;
+   }
  h1{
    background: #2f3640;
    color: #fff;
@@ -54,7 +70,7 @@
  display: flex;
  list-style: none;
  border-radius: 26px;
- box-shadow: 0 0 5px 2px #00000055;
+ //box-shadow: 0 0 5px 2px #00000055;
  //filter: blur(10px);
 }
 
@@ -239,6 +255,7 @@ background-color: #434b56;
      //width: 100%;
    }
    #about > ul{
+   	margin-right: 0;
      padding-right: 2%;
      //justify-content: center;
      //float: left;
@@ -594,6 +611,7 @@ font-size: 15px;
 width: 60%;}
 
 .img1{
+position: relative;
   //display: flex;
   //align-items: center;
   //margin: 5px 5px 5px 5px;
@@ -728,6 +746,11 @@ background-color: #2f3640;
 .pages-numbers a:active{
 background-color: #999;
 }
+.pk{
+  display: flex;}
+.mobile{
+  display: none;
+}
 
 @media (max-width: 1350px) {
 
@@ -768,23 +791,26 @@ background-color: #999;
 @media (max-width: 1105px) {
 
   .content0{ 
-  max-width: 850px;
-  width: 864px;
+  width: 100%;
   //height: 2045px;
   }
   .content-1{
-  width: 659px;
+  width: 76.5%;
   height: 384px;
   margin: 2px;}
   .sidebar{
-  width: 178px;
+  width: 22%;
   height: 1929px;
   margin: 3px;}
   h3{font-size: 21.3px;}
   h4{font-size:20.336px;
-  height: 52px;}
-  h5{font-size:16px;}
+  height: 52px;
+  padding: 0 15px;}
+  h5{font-size:16px;
+  //width: 100%;
+  }
   h6{
+  //width: 100%;
   height: 189px;
   font-size: 14.336px;
   margin-top: 5px;
@@ -795,17 +821,15 @@ background-color: #999;
   .sidebar a{font-size: 16px;}
   .img1{height: 320px;}
   .cat{}
-  .opisanie{}
+  .opisanie{
+  width: 100%;}
   .pages-numbers{
   font-size: 22px;
   //width: 1054px;
   }
-
-}
 @media (max-width: 890px) {
 
-  .content0{ 
-  max-width: 864px;
+  .content0{
   width: 100%;
   //height: 2045px;
   padding: 0px;
@@ -870,6 +894,7 @@ background-color: #999;
   h3{font-size: 21.3px;
   text-align: center;}
   h4{
+  position: absolute;
   top: 64px;
   font-size:20.336px;
   width: auto;
@@ -881,6 +906,7 @@ background-color: #999;
   border-radius: 20px 20px 0 0;
   background: #2f3640b5;
   //background: #fff;
+  z-index: 1;
   }
   h5{
   font-size:17px;
@@ -937,9 +963,66 @@ background-color: #999;
   .opisanie{position: relative;
   width: 100%;}
   .pages-numbers{
-  font-size: 16px;
+  //font-size: 16px;
   //width: 1054px;
   }
+  .pk{
+  display: none;
+}
+  .pages-numbers{
+  	padding: 0;
+  }
+  .mobile{
+  display: flex;
+  width: 100%;
+  //background-color: #000;
+  justify-content: center;
+}
+.mobile a{
+	width: 100%;
+	padding: 10px 0;
+    background-color: #2f3640;
+}
+.mobile a:first-child{
+	margin-right: 2px;
+    border-radius: 0 15px 15px 0;
+    box-shadow: inset 2px -4px 5px 0px #00000099;
+}
+.mobile a:last-child{
+	margin-left: 2px;
+    border-radius: 15px 0 0 15px ;
+    box-shadow: inset -2px -4px 5px 0px #00000099;
+}
+.mobile a:active{
+	background-color: #292f38;
+    box-shadow: inset 0px 0px 5px 6px #1e1d1d70;
+    color: #ffffffa3;
+    font-size: 21px;
+}
+.mobile #nfirst{
+	width: 100%;
+	padding: 10px 0;
+    background-color: #2f3640;
+    justify-content: center;
+	   margin-right: 2px;
+    border-radius: 0 15px 15px 0;
+    box-shadow: inset 2px -4px 5px 0px #00000099;
+    opacity: 0.6;
+    color: #ffffff4a;
+    font-size: 22px;
+}
+.mobile #nlast{
+	width: 100%;
+	padding: 10px 0;
+    background-color: #2f3640;
+    justify-content: center;
+	   margin-left: 2px;
+    border-radius: 15px 0 0 15px ;
+    box-shadow: inset -2px -4px 5px 0px #00000099;
+    opacity: 0.6;
+    color: #ffffff4a;
+    font-size: 22px;
+}
 
 }
 @media (max-width: 555px) {
@@ -968,18 +1051,18 @@ background-color: #999;
   }
 
    .pages-numbers{
-   font-size:16px;
-padding: 0 20px;
-height: 100%;
+   //font-size:16px;
+padding: 0 1px;
+//height: 100%;
  }
  
  .pages-numbers span{
- font-size:12px;
-padding: 9px 12px 7px 12px;
+ //font-size:12px;
+//padding: 9px 12px 7px 12px;
  }
  
 .pages-numbers a{
-padding: 7px 17px 6px 17px;
+//padding: 7px 17px 6px 17px;
 }
 }
 

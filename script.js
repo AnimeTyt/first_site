@@ -47,8 +47,11 @@ $(document).ready(function(){
 
 
 $(document).ready(function(){
-	$(' .burger').click(function(event){
-	  $('.burger,#about').toggleClass('active');
+	$(' .burger,#night').click(function(event){
+	  $('.burger,#about,#night').toggleClass('active');
 	  
 	});
 });
+   
+	
+	
