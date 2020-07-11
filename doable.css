@@ -26,17 +26,12 @@
    top: 0;
    opacity: 0;
    z-index: -1;
-   transition: all 0.5s ease;
+   transition: opacity 0.5s ease;
  }
  #night.active{
-   opacity: 0.8;
+   opacity: 0.9;
    z-index: 10;
    }
- h1{
-   background: #2f3640;
-   color: #fff;
-   text-align: center;
- }
 
  header {
    width: 100%;
@@ -338,7 +333,7 @@ background-color: #434b56;
      top: 53px;
      right: -100%;
      width: 250px;
-     height: auto;
+     height: 100%;
      transition: all 0.5s ease 0s;
      z-index: 1;
  } 
@@ -350,7 +345,7 @@ background-color: #434b56;
      height: auto;
      z-index: 2;
      display: block;
-     //height: 100%;
+     height: 100%;
      width: 100%;
      border: 2px solid #fff;
      border-radius: 25px 0 25px 25px;
@@ -407,6 +402,7 @@ font-size: 15px;
 //}
 .slick-slider{
 	min-width: 0;
+	max-width: 1090px;
 }
 /* Ia?aie?eaa?uay iaiei?ea */
 .slick-list {
@@ -468,7 +464,6 @@ font-size: 15px;
 	position: absolute;
 	top: 50%;
 	margin: -30px 0px 0px 0px;
-	z-index: 10;
 	font-size: 0;
 	width: 50px;
 	height: 50px;
@@ -543,12 +538,13 @@ font-size: 15px;
 }
 
 .content0{
+  max-width: 1065px;
   //display: flex-box;
   //position: relative;
   //float: center;
   border: 1px solid #fff;
   background-color: #262c336e;
-  width: 1330px;
+  //width: 1330px;
   height: auto; 
   margin: 0 auto;
   border-radius: 10px;
@@ -566,10 +562,13 @@ font-size: 15px;
   float: left;
   //border: 1px solid #fff;
   background-color: #2f3640;
-  width: 280px;
-  height: 3035px; 
+  width: 224px;
+  height: 2427px;
+  margin: 4px; 
+  //width: 280px;
+  //height: 3035px; 
   //padding: 5px 5px 0 10px;
-  margin: 5px 5px 5px 5px;
+  //margin: 5px 5px 5px 5px;
   border-radius: 10px;
   box-shadow: 0 0 5px #fff;
   overflow: hidden;
@@ -600,9 +599,9 @@ font-size: 15px;
   float: left;
   //border: 1px solid #fff;
   background-color: #2f3640;
-  width: 1030px;
-  height: 600px; 
-  margin: 5px 5px 5px 5px;
+  width: 824px;
+  height: 480px;
+  margin: 4px;
   border-radius: 30px;
   box-shadow: 0 0 5px #fff;  
 }
@@ -752,7 +751,7 @@ background-color: #999;
   display: none;
 }
 
-@media (max-width: 1350px) {
+@media (min-width: 1106px) {
 
   .content0{ 
   max-width: 1065px;
@@ -786,7 +785,7 @@ background-color: #999;
   //width: 1054px;
   }
 
-}
+//}
 
 @media (max-width: 1105px) {
 
@@ -1061,9 +1060,9 @@ padding: 0 1px;
 //padding: 9px 12px 7px 12px;
  }
  
-.pages-numbers a{
+/* .pages-numbers a{
 //padding: 7px 17px 6px 17px;
-}
+} */
 }
 
 @media (max-width: 769px) {

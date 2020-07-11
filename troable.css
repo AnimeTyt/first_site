@@ -1,0 +1,99 @@
+ *{
+  margin: 0;
+  padding: 0;
+  outline: none;
+ }
+ 
+  body, html {
+   width: 100%;
+   height: 100%;
+ }
+ 
+ body{
+   font-family: Trebuchet MS, Helvetica;
+
+  background-image: url("https://img0.liveinternet.ru/images/attach/c/5/86/655/86655110_84245305_Hokusai_Hram_Hongandzi_v_Asakusa.jpg");
+ }
+ 
+ .zagolovok{
+   background: #2f3640b0;
+   display: flex;
+   color: #fff;
+   justify-content: center;
+   padding-top: 46px;
+   margin-bottom: 2px;
+   width: 100%;
+   font-size: 45px;
+ }
+
+#podzhanry {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-auto-rows: 33%;
+   grid-gap: 3px;
+   //flex-direction: column; 
+   width: 100%;
+   height: 100%;
+   //background-color: #000000;
+}
+
+#podzhanry li {
+   display: flex;
+   width: auto;
+   height: auto;
+   background-color: #fff;
+   text-align: center;
+   background-color: #fff;
+   opacity: 0.7;
+   transition-duration: 0.3s; 
+}
+
+#zhanry {
+   display: flex;
+  width: 100%;
+   height: 100%;
+  text-decoration: none;
+  color: #2f3640;
+  justify-content: center;
+  align-items: center;
+}
+
+#podzhanry li:hover {
+  background-color: #2f3640;
+}
+
+#zhanry:hover {
+  color: #fff;
+}
+
+@media (max-width: 705px) {
+
+#podzhanry {
+   grid-template-columns: 1fr 1fr;
+ }
+
+}
+
+@media (max-width: 470px) {
+
+#zhanry {
+  font-size: 21px;
+}
+
+.zagolovok{
+  font-size: 37px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
