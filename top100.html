@@ -6,12 +6,73 @@
     <meta name="viewport" content="width=device-width">
     <title>AnimeTyt</title>
     <script type="text/javascript" src="jquery-3.5.0.js"></script>
-    <script type="text/javascript" src="script.js"></script> 
+    <script type="text/javascript" src="script.js"></script>  
     <link rel="stylesheet" href="doable.css" type="text/css">
+    <link rel="stylesheet" href="troable.css" type="text/css">
 <script src="https://kit.fontawesome.com/03c13364c9.js" crossorigin="anonymous"></script>
 </head>
+
+<div id="night"></div>
+
+ <header> 
+ 
+ <div id="logo" title="Возвращает на верх страници" onclick="slowScroll('#top')">
+       <span>AnimeTyt</span>
+    </div>
+    
+     <div class="burger">
+       <span></span>
+     </div>
+
+    <div id="about">  
+
+  <ul>
+<li class="search-box">
+         <input type="text" class="search-txt" placeholder="Поиск">
+         <a href="#" class="search-btn"><i class="fas fa-search"></i></a>
+</li>
+        <li><a href="index.html" title="Главная" onclick="slowScroll('#main')" >Главная</a></li>
+        <li><a href="zhanry.html" title="Жанры" onclick="slowScroll('#main')" >Жанры</a>
+<ul>
+                    <li><a href="#">повсегдневность</a></li>
+                    <li><a href="#">приключения</a></li>
+                    <li><a href="#">романтика</a></li>
+                    <li><a href="#">фантастика</a></li>
+                    <li><a href="#">драма</a></li>
+                </ul>
+</li>
+        <li><a href="top100.html" title="Список топ-100 аниме" onclick="slowScroll('#main')" >Топ-100</a></li>
+        <li><a href="anonsy.html" title="Анонсы" onclick="slowScroll('#main')" >Анонсы</a>
+<ul>
+                    <li><a href="#">Лето 2020</a></li>
+                    <li><a href="#">Осень 2020</a></li>
+                    <li><a href="#">Зима 2020</a></li>
+                    <li><a href="#">Весна 2020</a></li>
+                </ul>
+</li>
+        <li><a href="novosti.html" title="Новости" onclick="slowScroll('#main')" >Новости</a></li>
+  </ul>
+    </div>
+
+ 
+ 
+ </header>
+
 <body id="top">
 
- <h1>Список пуст:(</h1>
+ <div class="zagolovok">Топ-100 аниме:</div>
+
+ <ul id="podzhanry">
+                    <li><a href="#" id="zhanry">№1</a></li>
+                    <li><a href="#" id="zhanry">№2</a></li>
+                    <li><a href="#" id="zhanry">№3</a></li>
+                    <li><a href="#" id="zhanry">№4</a></li>
+                    <li><a href="#" id="zhanry">№5</a></li>
+                    <li><a href="#" id="zhanry">№6</a></li>
+                    <li><a href="#" id="zhanry">№7</a></li>
+                    <li><a href="#" id="zhanry">№8</a></li>
+                    <li><a href="#" id="zhanry">№9</a></li>
+                    <li><a href="#" id="zhanry">№10</a></li>
+                </ul>
 
 </body>
